@@ -1,0 +1,188 @@
+
+/* ==========================================================================
+   HTML general
+   ========================================================================== */
+
+/**
+ * remove the default underline
+ */
+
+
+html {
+  height: 100%;
+  background: #e3e3e0;
+}
+
+a { text-decoration: none; }
+
+:focus,
+:active { outline: 0; }
+
+/**
+ * box-sizing all elements     
+ */
+
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.hide { display: none; }
+
+/**
+ * Center  
+ */
+
+body {
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+
+header {
+  text-align: center;
+  color: #29628D;
+  padding-top: 30px;
+  text-shadow: 1px 1px 2px #fff;
+  margin:120px auto 50px auto;
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+#content {
+  margin: 0 auto;
+  width: 978px;
+}
+
+/**
+ * prev next and slider
+ */
+
+
+#content .prev {
+  background: url(../images/left-on.png) no-repeat scroll 0 0 transparent;
+  display: block;
+  float: left;
+  height: 40px;
+  margin-top: 100px;
+  width: 23px;
+}
+
+#content .prev-disable { background: url(../images/left-off.png) no-repeat scroll 0 0 transparent; }
+
+#content .next {
+  background: url(../images/right-on.png) no-repeat scroll 0 0 transparent;
+  display: block;
+  float: right;
+  height: 40px;
+  margin-top: 100px;
+  width: 23px;
+}
+
+#content .next-disable { background: url(../images/right-off.png) no-repeat scroll 0 0 transparent; }
+
+#slider {
+  float: left;
+  margin: 10px 5px;
+  width: 920px;
+}
+
+/**
+ * Carousel images and transitions
+ */
+
+
+#slider ul li { position: absolute; }
+
+#slider ul li.prev-slide {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
+  -moz-transition: opacity 400ms ease 0s, -moz-transform 400ms ease 0s;
+  -webkit-transition: opacity 400ms ease 0s, -webkit-transform 400ms ease 0s;
+  -o-transition: opacity 400ms ease 0s, -o-transform 400ms ease 0s;
+}
+
+#slider ul li.selected {
+  opacity: 1;
+  transform: translate(310px, 0px);
+  -ms-transform: translate(310px, 0px);
+  -webkit-transform: translate(310px, 0px);
+  -o-transform: translate(310px, 0px);
+  -moz-transform: translate(310px, 0px);
+  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
+  -moz-transition: opacity 400ms ease 0s, -moz-transform 400ms ease 0s;
+  -webkit-transition: opacity 400ms ease 0s, -webkit-transform 400ms ease 0s;
+  -o-transition: opacity 400ms ease 0s, -o-transform 400ms ease 0s;
+}
+
+#slider ul li.next-slide {
+  opacity: 1;
+  transform: translate(620px, 0px);
+  -ms-transform: translate(620px, 0px);
+  -webkit-transform: translate(620px, 0px);
+  -o-transform: translate(620px, 0px);
+  -moz-transform: translate(620px, 0px);
+  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
+  -moz-transition: opacity 400ms ease 0s, -moz-transform 400ms ease 0s;
+  -webkit-transition: opacity 400ms ease 0s, -webkit-transform 400ms ease 0s;
+  -o-transition: opacity 400ms ease 0s, -o-transform 400ms ease 0s;
+}
+
+#slider ul li.prev-hidden {
+  opacity: 0;
+  transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -webkit-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
+  -moz-transition: opacity 400ms ease 0s, -moz-transform 400ms ease 0s;
+  -webkit-transition: opacity 400ms ease 0s, -webkit-transform 400ms ease 0s;
+  -o-transition: opacity 400ms ease 0s, -o-transform 400ms ease 0s;
+}
+
+#slider ul li.next-hidden {
+  opacity: 0;
+  transform: translate(620px, 0px);
+  -ms-transform: translate(620px, 0px);
+  -webkit-transform: translate(620px, 0px);
+  -o-transform: translate(620px, 0px);
+  -moz-transform: translate(620px, 0px);
+  transition: opacity 400ms ease 0s, transform 400ms ease 0s;
+.  -moz-transition: opacity 400ms ease 0s, -moz-transform 400ms ease 0s;
+  -webkit-transition: opacity 400ms ease 0s, -webkit-transform 400ms ease 0s;
+  -o-transition: opacity 400ms ease 0s, -o-transform 400ms ease 0s;
+}
+
+/**
+ * content overlay
+ */
+
+
+#slider .overlay {
+  background: none repeat scroll 0 0 rgba(10, 10, 10, 0.5);
+  padding: 10px;
+  position: relative;
+  top: -43px;
+  width: 100%;
+}
+
+#slider .overlay > p {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 5px 2px rgba(132, 130, 125, 0.98);
+}
+
+#slider .overlay > p a { color: #fff; }
