@@ -1,0 +1,16 @@
+<?php
+    $_cartQty = $this->getSummaryCount();
+    if(empty($_cartQty)) {
+        $_cartQty = 0;
+    }
+?>
+
+<a href="#header-cart" class="skip-link skip-cart <?php if($_cartQty <= 0): ?> no-count<?php endif; ?>">
+    <span class="icon"></span>
+    <span class="label"><?php echo $this->__('My Bag:'); ?></span>
+    <span class="count"><?php echo $_cartQty.' item(s)'; ?></span>
+</a>
+
+<div id="header-cart" class="block block-cart skip-content">
+    <?php echo $this->getChildHtml('minicart_content');?>
+</div>
