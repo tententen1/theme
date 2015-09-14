@@ -1,0 +1,89 @@
+/* Public
+=============================================================================*/
+body, .header-language-container, .page-header { font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;}
+.wrapper { background: #fafafa;}
+button, input, select, table, textarea { line-height: 100%; font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;}
+a { color: #08698d; text-decoration: none;}
+a:hover { text-decoration: underline;}
+
+#search_mini_form .search-button:before , .skip-cart .icon { background: url(../images/list_icon.png) no-repeat;}
+
+/* Top
+=============================================================================*/
+.header-language-background { background: #2a2929; padding: 0;}
+.header-language-background .header-language-container { max-width: 1170px;}
+.form-language label, .currency-switcher label { position: relative; width: 120px;}
+#select-language, #select-currency {border: 0 none; color: #fff; padding: 6px 0px 6px 35px; text-transform: capitalize; width: 100%; background: no-repeat 5px center; cursor: pointer;}
+#select-language:focus, #select-currency:focus { background-color: #4b4a4a; box-shadow: 0 -1px 1px #fff; -moz-box-shadow: 0 -1px 1px #fff; -webkit-box-shadow: 0 -1px 1px #fff;}
+#select-language option, #select-currency option { padding: 5px 0 5px 37px; background: #f2f2f2 no-repeat 5px center; color: #555555;}
+#select-language.english { background-image: url(../images/flags/flag_default.png);}
+#select-language.french { background-image: url(../images/flags/flag_french.png);}
+#select-language.german { background-image: url(../images/flags/flag_german.png);}
+
+
+/* Header
+=============================================================================*/
+.page-header, .main-container, .footer-container { max-width: 1170px; padding: 0;}
+.page-header { padding: 55px 0 20px;}
+
+.free_shipping { padding: 12px 0; font-size: 12px; color: #f2f2f2; float: left; margin-left: 23px;}
+.free_shipping a { text-transform: capitalize; border-bottom: 2px solid #717070; margin-left: 5px;}
+.free_shipping a:hover { border-color: #fff; text-decoration: none;}
+
+.wrap_account { float: right; position: relative;}
+/*.wrap_account .skip-link { display: none;}*/
+/*.wrap_account #header-account { display: block; padding: 0;}*/
+/*.wrap_account #header-account ul li { display: inline-block;}*/
+/*#header-account a { padding: 3px 10px; text-transform: capitalize; color: #f2f2f2;}*/
+.skip-link  { float: none; background: none; text-transform: capitalize;}
+.skip-account .icon { display: none;}
+.skip-account { position: static;}
+#header-account.skip-active { right: 0; top: 100%;}
+.header-language-background .welcome-msg { padding: 10px; text-transform: capitalize;}
+#header-account a { font-size: 13px; text-transform: capitalize; color: #555;}
+
+#header-search { right: auto; left: 0; top: 10px; z-index: 98; width: auto; height: auto;}
+#search { background: url(../images/bg_search.png) no-repeat 137px center #eee; border: 0 none; font-size:  15px; color: #2c2828; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px; padding: 0 20px; width: 141px; height: 34px; line-height: 34px;}
+#search_mini_form .search-button { height: 34px;}
+#search_mini_form .search-button:before { margin-left: -17px; margin-top: -11px; margin-left: -19px; height: 22px; width: 26px;}
+
+.logo { width: auto; max-width: 100%; float: none; text-align: center; min-height: 0; padding: 0; margin-bottom: 40px;}
+.logo a { display: inline-block;}
+.logo a img { margin: 0 auto;}
+
+.skip-links { position: absolute; right: 0; top: 0; overflow: inherit; z-index: 99;}
+.skip-cart { position: static; text-transform: uppercase; font-family: "FjallaOne"; font-size: 14px; color: #666; display: block; padding: 5px 10px;}
+.skip-cart .icon, .skip-cart:not(.skip-active):hover .icon {  background-position: center -22px; vertical-align: top;}
+.skip-cart .count { display: inline; font-family: "FjallaOne"; font-size: 14px; color: #666;}
+.skip-cart .count:before, .skip-cart .count:after { content: '';}
+.skip-link.skip-active .count, a:hover span.label {color: #666;}
+.skip-cart:hover, .skip-cart.skip-active, .header-minicart .minicart-wrapper { background: url(../images/bg_minicart.png); border: 0 none;}
+#header-cart.skip-active { background: none; border: 0 none; width: 300px; top: 100%;}
+.header-minicart .minicart-wrapper { padding: 20px;}
+.header-minicart .block-subtitle { font-family: "Myriad Pro"; font-size: 14px; color: #666; padding: 0; margin: 0 0 15px; text-transform: capitalize; text-align: left; font-weight: normal;}
+.header-minicart .mini-products-list { padding: 0;}
+.header-minicart .mini-products-list li { border: 0 none; margin-bottom: 25px; padding: 0;}
+.header-minicart .mini-products-list li.last { border-bottom: 1px solid #ccc; margin-bottom: 20px; padding-bottom: 15px;}
+.mini-products-list .product-image { border: 0 none; margin-right: 15px; z-index: 20; margin-top: 5px;}
+.header-minicart .mini-products-list li .product-details { margin: 0; padding-right: 20px;}
+.header-minicart .product-details .product-name { font-size: 14px; font-family: "FjallaOne"; text-transform: capitalize; font-weight: normal;}
+.header-minicart .product-details .product-name a { color: #444;}
+.header-minicart .product-details .product-name a:hover { text-decoration: underline;}
+.price-box .price, .price { color: #ce1111; font-size: 15px; font-family: "FjallaOne";}
+.btn_control { position: absolute; right: 0; top: 5px; font-size: 0; text-indent: -999em; width: 11px; height: 11px; background: url(../images/btn_remove.png) no-repeat; cursor: pointer; display: none;}
+.product-details:hover .btn_control { display: block;}
+.header-minicart .subtotal { background: none; text-align: right; line-height: 100%; color: #444; font-size: 14px;}
+.header-minicart .subtotal .label { color: #444; margin-right: 15px;}
+.header-minicart .subtotal .price { color: #ce1111; font-size: 18px;}
+.header-minicart .minicart-actions { padding: 0; margin-top: 10px;}
+.header-minicart .minicart-actions .cart-link { font-family: "FjallaOne"; display: block; position: static; line-height: 38px; font-size: 15px; color: #fff; background: #c3c3c3; height: 38px; text-align: center; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; margin-bottom: 10px;}
+.checkout-types { float: none; text-align: center;}
+.checkout-types li { margin: 0;}
+.header-minicart .minicart-actions .checkout-button { background: #08698d; font-family: "FjallaOne"; font-size: 15px; line-height: 38px; display: block; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; height: 38px; padding: 0;}
+
+#header-nav { clear: both; text-align: center; border: 0 none;}
+.nav-primary { margin: 0;}
+.nav-primary a { font-size: 18px; color: #4f4e4e; font-family: "FjallaOne";}
+.nav-primary a.level0 { padding: 0 20px; background: url(../images/line_menu.png) no-repeat left center;}
+.nav-primary li.first a.level0 { background: none;}
+.nav-primary a:hover, .nav-primary li:hover > a { color: #c31616;}

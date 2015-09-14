@@ -1,0 +1,12 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="root">
+            <reference name="head">
+                <action method="addCss"><stylesheet>css/lib/owl.carousel.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/lib/owl.theme.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/lib/owl.transitions.css</stylesheet></action>
+                <action method="addItem"><type>skin_js</type><name>js/lib/owl.carousel.js</name></action>
+            </reference>
+        </reference>
+    </default>
+</layout>
